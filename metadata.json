@@ -1,0 +1,7 @@
+{
+  "name": "V2 Get All Database - Auth Presensi Ekstra SMP Santa Ursula Bandung",
+  "description": "A web application for managing extracurricular attendance for SMP Santa Ursula Bandung. It allows for QR code scanning, manual entry, student registration, and report generation.\n\n\n\n\n",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
