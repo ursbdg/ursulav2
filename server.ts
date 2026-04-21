@@ -23,9 +23,10 @@ async function startServer() {
     });
     app.use(vite.middlewares);
   } else {
-    app.use(express.static(path.join(__dirname, "dist")));
+    const distPath = path.resolve(process.cwd(), "dist");
+    app.use(express.static(distPath));
     app.get("*all", (req, res) => {
-      res.sendFile(path.join(__dirname, "dist", "index.html"));
+      res.sendFile(path.join(distPath, "index.html"));
     });
   }
 
